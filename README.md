@@ -234,32 +234,6 @@ advice or balance-sheet forecasting — and report both metrics either way.
 
 ---
 
-## What changed from the previous dataset version
-
-The final v2 dataset removed four columns and added one. The changes fix real problems the earlier
-EDA had flagged:
-
-| Change | Column | Effect on the analysis |
-|---|---|---|
-| **Removed** | `MonthlyIncome` | Was exactly `(AnnualSalary + AnnualBonus) / 12`. Redundancy gone. |
-| **Removed** | `YearsUntilRetirement` | Was exactly `max(DesiredRetirementAge − Age, 0)`. Now an engineered feature. |
-| **Removed** | `CustomerSegment` | Was a relabelling of `EmploymentStatus == "Retired"`. |
-| **Removed** | `InvestmentStyle` | Overlapped heavily with `RiskTolerance`. |
-| **Removed** | `"Retired"` level of `EmploymentStatus` | Population is now uniformly pre-retirement; the target means the same thing for every row. |
-| **Added** | `Funding_Gap` | A useful business KPI — and the most severe leakage risk in the file. |
-
-Consequences for the notebook: multicollinearity improved substantially (pairs above |r| = 0.90
-fell from 5 to 2), all eleven integrity checks now pass, the old Section 9 segment analysis was
-replaced with **Retirement Horizon Analysis**, and the leakage section grew from two critical
-columns to three.
-
-One finding **reversed** between versions and is reported as such rather than quietly dropped: the
-earlier data showed employer-pension holders saving noticeably less of their own income (a
-substitution effect). The final data shows differences under half a percentage point, inconsistent
-in sign. A finding that does not replicate across dataset versions was never solid enough to act on.
-
----
-
 ## Running the notebook
 
 ```bash
