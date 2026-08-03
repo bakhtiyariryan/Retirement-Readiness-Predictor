@@ -8,7 +8,7 @@ says about the business.
 **Dataset:** 30,000 pre-retirement customers × 32 columns (synthetic)
 **Target:** `Expected_Retirement_Fund` — continuous, USD
 **Task:** Supervised regression
-**Notebook:** [`01_exploratory_data_analysis.ipynb`](01_exploratory_data_analysis.ipynb)
+**Notebook:** [`notebooks/01_exploratory_data_analysis.ipynb`](01_exploratory_data_analysis.ipynb)
 
 ---
 
