@@ -30,17 +30,6 @@ columns.** Overall ML-readiness score: **3.7 / 5.0**, held down almost entirely 
 | 9 | Missingness (0.56% of cells, 12 columns) is consistent with **MCAR** under a permutation test | Median imputation inside the pipeline. |
 | 10 | Outliers are coherent, commercially important, and already winsorized by the generator | **Keep all rows.** |
 
----
-
-## Repository structure
-
-```
-.
-├── 01_exploratory_data_analysis.ipynb   # the EDA (executed, renders on GitHub)
-├── README.md                            # this file
-├── retirement_dataset_v2.csv            # source data
-└── figures/                             # 22 figures, 300 DPI PNG
-```
 
 ---
 
