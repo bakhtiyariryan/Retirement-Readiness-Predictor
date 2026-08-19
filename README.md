@@ -269,9 +269,60 @@ analysis, not a disclaimer attached to it.
 
 ---
 
-## Next steps
+2. Data Preprocessing & Feature Engineering
 
-- `02_preprocessing_and_feature_engineering.ipynb` — implement the pipeline above, with engineered
-  features built inside cross-validation folds
-- `03_model_training_and_evaluation.ipynb` — Ridge baseline → Random Forest → Gradient Boosting,
-  with error reported by horizon band **and** income quintile
+After completing the exploratory analysis, the dataset was prepared for machine-learning model development.
+
+The preprocessing workflow removes duplicate observations and target-leaking variables, separates the training and test sets, handles missing values, encodes categorical variables, and scales numerical features where appropriate.
+
+Five financially meaningful features are engineered:
+
+* YearsUntilRetirement
+* CareerStartAge
+* SalaryBasedContribution
+* RealExpectedReturn
+* DebtToIncomeRatio
+
+All transformations are organized into a reproducible scikit-learn pipeline, ensuring that preprocessing parameters are learned from the training data without information from the test set.
+
+The final preprocessing step produces 40 model-ready features and saves the preprocessing pipeline for use in subsequent model training.
+
+Notebook: [02_data_preprocessing.ipynb⁠￼](https://github.com/bakhtiyariryan/Retirement-Readiness-Predictor/blob/main/notebooks/02_data_preprocessing.ipynb)
+
+
+Next Steps
+
+The data is now ready for model development. The next stage is to train and evaluate several regression models to determine how accurately the retirement fund can be predicted.
+
+3. Baseline Model Training & Evaluation
+
+* Establish baseline regression models
+* Compare linear and regularized models
+* Evaluate tree-based models
+* Use cross-validation for model comparison
+* Compare RMSE, MAE, and R²
+* Evaluate predictions in both log space and dollar values
+* Identify the strongest baseline model
+
+4. Model Improvement
+
+* Tune the strongest baseline models
+* Test additional feature engineering
+* Compare improvements against the baseline
+* Check whether improvements generalize to unseen data
+
+5. Model Interpretation & Error Analysis
+
+* Identify the most influential features
+* Analyze prediction errors and residuals
+* Examine performance across different customer groups
+* Identify where the model performs well and where it struggles
+
+6. Final Model & Financial Insights
+
+* Select the final model
+* Translate predictions into retirement-readiness insights
+* Connect model results to practical financial-planning decisions
+* Document limitations and opportunities for future development
+
+
