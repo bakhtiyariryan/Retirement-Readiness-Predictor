@@ -269,7 +269,7 @@ analysis, not a disclaimer attached to it.
 
 ---
 
-2. Data Preprocessing & Feature Engineering
+# Data Preprocessing & Feature Engineering
 
 After completing the exploratory analysis, the dataset was prepared for machine-learning model development.
 
@@ -290,7 +290,7 @@ The final preprocessing step produces 40 model-ready features and saves the prep
 Notebook: [02_data_preprocessing.ipynb⁠￼](https://github.com/bakhtiyariryan/Retirement-Readiness-Predictor/blob/main/notebooks/02_data_preprocessing.ipynb)
 
 
-Next Steps
+## Next Steps
 
 The data is now ready for model development. The next stage is to train and evaluate several regression models to determine how accurately the retirement fund can be predicted.
 
