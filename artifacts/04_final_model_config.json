@@ -1,0 +1,20 @@
+{
+  "candidate": "Tuned GB (log + smearing)",
+  "target_scale": "log",
+  "smearing": true,
+  "smearing_factor": 1.0289327450792438,
+  "age_squared": false,
+  "model_params": {
+    "subsample": 0.8,
+    "n_estimators": 600,
+    "min_samples_leaf": 5,
+    "max_depth": 4,
+    "learning_rate": 0.05
+  },
+  "random_state": 42,
+  "cv_folds": 5,
+  "selection_metric": "RMSE ($)",
+  "cv_selection_score": 1205619.0586434498,
+  "n_training_rows": 23880,
+  "n_model_features": 40
+}
