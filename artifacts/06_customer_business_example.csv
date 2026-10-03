@@ -1,0 +1,14 @@
+Customer attribute,Lower (10th pct),Typical (50th pct),Upper (90th pct)
+Age,51,42,48
+Annual salary,"$44,500","$101,037","$212,707"
+Retirement account balance,"$187,930","$349,719","$1,147,763"
+Savings rate,9.2%,4.8%,11.8%
+Employer pension,No,Yes,Yes
+Years until retirement,17,25,16
+Predicted retirement fund,"$996,664","$3,428,612","$7,679,191"
+Retirement fund goal,"$1,512,571","$2,838,242","$3,746,421"
+Funding gap (goal - predicted),"$515,907","-$590,370","-$3,932,770"
+Funding ratio,0.66,1.21,2.05
+Proposed readiness band,Significant Gap,On Track,On Track
+Actual fund (for reference only),"$1,055,997","$2,593,656","$8,817,648"
+Prediction error,"-$59,333","+$834,956","-$1,138,456"

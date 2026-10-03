@@ -1,0 +1,17 @@
+Section,Item,Value
+Model performance,"R-squared (log scale, where the model is trained)",0.9022
+Model performance,R-squared (dollars),0.8515
+Model performance,RMSE - root mean squared error (dollars),"$1,231,163"
+Model performance,MAE - mean absolute error (dollars),"$753,165"
+Model performance,Median absolute error (dollars),"$436,662"
+Model performance,MAPE - mean absolute percentage error,21.0%
+Business measures,Customers scored,"5,970"
+Business measures,Average predicted retirement fund,"$4,019,345"
+Business measures,Average retirement fund goal,"$3,764,527"
+Business measures,Average funding ratio,1.08
+Business measures,Median funding ratio,0.99
+Business measures,Customers projected to fall short of goal,50.6%
+Business measures,Total projected shortfall across those customers,$4.30B
+Business measures,Proposed band: On Track,"2,948 (49.4%)"
+Business measures,Proposed band: Needs Attention,"1,118 (18.7%)"
+Business measures,Proposed band: Significant Gap,"1,904 (31.9%)"
