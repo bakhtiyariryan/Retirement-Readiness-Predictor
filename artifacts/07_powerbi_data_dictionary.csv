@@ -1,0 +1,15 @@
+Column,Source,Meaning
+Customer_ID,Identifier,Unique demonstration customer identifier. Not used by the model.
+Age,Customer input,Customer age in years.
+AnnualSalary,Customer input,Gross annual salary in dollars.
+SavingsRate,Customer input,"Share of salary directed to savings, as a decimal."
+RetirementAccountBalance,Customer input,Current retirement account balance in dollars.
+EmploymentStatus,Customer input,Employment status.
+Education,Customer input,Highest education level.
+EmployerPension,Customer input,Whether the employer provides a pension.
+YearsUntilRetirement,Customer input,Desired retirement age minus current age.
+Predicted_Retirement_Fund,Model output,Retirement fund in dollars predicted by the frozen Notebook 4 model.
+Retirement_Fund_Goal,Customer input,The customer's own retirement-fund goal. Not predicted.
+Funding_Gap,Business rule,Goal minus predicted fund. Positive means projected to fall short.
+Funding_Ratio,Business rule,Predicted fund divided by goal. Blank where no valid goal exists.
+Retirement_Readiness,Business rule,"Proposed band: On Track at or above 1.00, Needs Attention from 0.75, otherwise Significant Gap."
